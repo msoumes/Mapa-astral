@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-custom">
+    <div class="container d-flex justify-content-center align-items-center">
+        <a class="navbar-brand" href="#">
+            <img src="imagens/Astro-removebg-preview.png" alt="Bootstrap" width="150" height="120">
+        </a>
+        <form class="d-flex align-items-center" role="search">
+            <input class="form-control me-2 custom-search-input" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success custom-search-btn" type="submit">Buscar</button>
+        </form>
+    </div>
+</nav>
+
+
+<ul class="nav justify-content-center custom-navbar">
+  <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Horóscopo</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link custom-link" href="#">Tarot</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link custom-link" href="#">Mapa astral</a>
+  </li>
+</ul>
+
+<div class="image-container">
+  <img src="imagens/Design sem nome.png" alt="Imagem de fundo">
+  <div class="green-container">
+    <h2>Mapa Astral</h2>
+    <form id="form-mapa">
+      <div class="row">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required class="custom-input">
+      </div>
+      <div class="row">
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required class="custom-input">
+      </div>
+      <div class="row">
+        <div class="custom-input-group">
+          <label for="niver">Data de Nascimento:</label>
+          <input type="date" id="niver" name="niver" required class="custom-input">
+        </div>
+        <div class="custom-input-group">
+          <label for="horas">Horário:</label>
+          <input type="time" id="horas" name="horas" required class="custom-input">
+        </div>
+      </div>
+    </form>
+    <button type="button" id="btn" class="custom-search-btn">Calcular</button>
+  </div>
+</div>
+
+<div id="resultado" class="green-container" style="display: none; margin-top: 20px;">
+  <h2>Resultado</h2>
+  <table class="table table-bordered rounded">
+    <thead>
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Signo</th>
+        <th scope="col">Ascendente</th>
+      </tr>
+    </thead>
+    <tbody id="resultado-body">
+    </tbody>
+  </table>
+  </div>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="container mt-4">
+    <div class="row row-cols-1 row-cols-md-3 g-4 align-items-stretch">
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">TAROT</h5>
+            <p class="card-text">O Tarot é um guia, um espelho que reflete todo o espectro da experiência humana através de arquétipos. Por ter sido utilizado ao longo dos séculos basicamente como instrumento de adivinhação (onde seus significados para este fim são derivados da Cabala, a vertente mística do judaísmo e também da alquimia medieval), aos poucos foi perdendo suas características originais.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">HORÓSCOPO?</h5>
+            <p class="card-text">Horóscopo é um mapa que reflete as posições exatas dos planetas do zodíaco em um determinado momento. A partir dele, portanto, se realizam diversos tipos de análises simbólicas, que fornecem informações sobre a personalidade de uma pessoa, acontecimentos e tendências.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">MAPA ASTRAL</h5>
+            <p class="card-text">Um Mapa Astral é um sistema de informações detalhadas com base astronômica, matemática e geométrica sobre a posição dos astros e dos signos do zodíaco no exato momento do nascimento de uma determinada pessoa e o tipo de influência que eles podem exercer ao longo da vida dentro do estudo da Astrologia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/app.js"></script>
+</body>
+</html>
